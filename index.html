@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <link rel="Stylesheet" href="rsstyle.css">
+    <link rel="Stylesheet" href="css/all.min.css">
+    <link rel="Stylesheet" href="css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="Stylesheet" href="style.css">  -->
+    
+
+</head>
+<body>
+    <section> +
+        <div class="popup-overlay" >
+            <div class="popup">
+                <h1>HIRE ME</h1>
+                <div class="container">
+                    <form action="javascript:Usermail()" method="post">
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="fname">Full Name</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="name" name="firstname" placeholder="Your name..">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="Organization">Organization</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="Organization" name="Organization" placeholder="Organization name" style="text-align: left;">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="Email">Email</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="country">Country</label>
+                        </div>
+                        <div class="col-75">
+                          <select id="country" name="country">
+                            <option value="india">India</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <input type="submit" value="Submit" onclick="Usermail()">
+                      </div>
+                    </form>
+                  </div>
+                  
+                <div class="popup-close-btn">&times;</div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section>
+            <navbar>
+                <span>
+                    <img class="logo" src="/image/logo.png" alt="logo">
+                </span>
+                <span class="nav">
+                    <h2><a href="#">Home</a></h2>
+                </span>
+                <span class="nav">
+                    <h2><a href="#About">About</a></h2>
+                </span>
+                <span class="nav">
+                    <h2><a href="#Brands">Brands</a></h2>
+                </span>
+                <span class="nav">
+                    <h2><a href="#Services">Services</a></h2>
+                </span>
+                <span class="nav">
+                    <h2><a href="#Feedback">Feedback</a></h2>
+                </span>
+                <span class="nav">
+                    <h2><a href="#subscribe"> Contact</a></h2>
+                </span>
+            </navbar>
+        </section>
+
+        <section id="Home">
+            <div class="intro" >
+                <img id="introimage" src="image/banner-image.png" alt="main"> 
+                <p id="text">
+                    <b style="font-size: 3.0rem;">HEY!!!!!!</b><br>
+                    <p style="font-size: 4.0rem; font-weight: 1000;"><b>I am Alok Kushawaha<b></p><br>
+                    <p>ASSOCIATE SOFTWARE ENGINEER TRAINEE</p>
+                </p>
+
+                <div>
+                    <button  class="buttonn" id="open-popup-btn">HIRE ME</button>
+                    <a href="resume.html" target="blank"><button  class="buttonn">GET CV</button></a>
+                </div>
+                
+            </div>
+    
+        </section>
+
+        <section id="About">
+            <img id="myself" src="image/intro.jpg">
+            <div id="introduction">
+                
+                <h1 class="my" style="letter-spacing: .2rem; font-size: 4.0rem;line-height: 4.0rem; padding-top: 8%;">LET ME<br>INTRODUCE<br>MY SELF</h1>
+                <p class="my" style="font-size: 2.0rem; word-spacing: .3rem;">Hello everyone my name is Alok Kushawaha and i am from Noida.I am purusing my B.tech form Noida Institute of Engineering and technology Gr.noida. My passion towards programing brings me to choose IT stream. My goal is to work for ann organization where i can use my academic knowledge and skill to improve my abilities , I want to be one of th reason for the organization growth .Other sides of work in my free time I would like to do painting to keep myself calm and active<br>   
+                I did not like to take some more paragraph to introdure myself. You can assume more about myself by watching my skills by which i create this web page.
+                <br>
+                <a href="/image/Resume.pdf" target="blank" download="Resume"><button class="buttonn">DOWNLOAD CV</button></a>
+                </p> 
+                
+            </div>
+        </section>
+
+        <section id="Brands">
+            <div class="brand-heading">
+                <h1 >BRAND COLLABORATION</h1>
+            </div>
+            <table class="table1">
+                <tr>
+                    <td><img src="image/logo1.png"></td>
+                    <td><img src="image/logo2.png"></td>
+                    <td><img src="image/logo3.png"></td>
+                </tr>
+
+                <tr>
+                    <td><img src="image/logo4.png"></td>
+                    <td><img src="image/logo5.png"></td>
+                    <td><img src="image/logo6.png"></td>
+                </tr>
+                <tr>
+                    <td><img src="image/logo7.png"></td>
+                    <td><img src="image/logo8.png"></td>
+                    <td><img src="image/logo9.png" style="padding: 2.0rem 6.0rem;"></td>
+                </tr>
+
+                <section>
+                    <div class="experience">
+                        <img class="image"  src="image/client-info-bg.png">
+                        <span>NO</span>
+                        <p>Experience<br>Exploring New technologies</p>
+                        <div class="contact">
+                            
+                        <p><i class="fa-solid fa-phone"></i><a style="color: blueviolet; text-decoration: none;">CALL NOW</a><br>(+91)9318417646</p>
+                        
+                        
+                        </div>
+                        
+                    </div>
+                </section>
+            </table>
+        </section>
+
+        <section class="services-offer" id="Services">
+            <div class="services">
+                <h1>SERVICES OFFERS</h1>
+                <p>Our website developers provide expert web application development and web design services to our clients. Appnovation offers a variety of website design and development services, from creating mobile web development solutions and responsive website designs, to building custom e-commerce and intranet experiences using the latest and proven web technologies. With up to 85% of consumers visiting company’s or service provider’s website before making a purchase, more and more consumers make decisions based on their online experience: the appearance, usability and accessibility of your website is more important than ever, especially in an increasingly competitive market.</p>
+
+            </div>
+            <div class="container-services">
+                <div class="row">
+                  <div class="card">
+                    <div class="card-body">
+                        <div class="s-logo">
+                            <img src="image/s1.png">
+                            <h1>WP DEVELOPER</h1>  
+                            <p>
+                                Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.
+                
+                            </p>
+                        </div>    
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                        <div class="s-logo">
+                            <img src="image/s2.png" >
+                            <h1>UX/UI DESIGN</h1>  
+                            <p>
+                                User interface (UI) design is the process designers use to build interfaces in software or computerized devices, focusing on looks or style. Designers aim to create interfaces which users find easy to use and pleasurable. UI design refers to graphical user interfaces.
+                            </p>
+                        </div>    
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                        <div class="s-logo">
+                            <img src="image/s3.png">
+                            <h1>WEB DESIGN</h1>  
+                            <p>
+                                Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development. Web design used to be focused on designing websites for desktop browsers
+                            </p>
+                        </div>    
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                        <div class="s-logo">
+                            <img src="image/s4.png" >
+                            <h1>SEO OPTIMIZE</h1>  
+                            <p>
+                                SEO stands for “search engine optimization.” In simple terms, it means the process of improving your site to increase its visibility when people search for products or services related to your business in Google, Bing, and other search engines.
+                            </p>
+                        </div>    
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="client" id="Feedback">
+            <div class="hero">
+                <h1>CLIENT SAY ABOUT ME</h1>
+                <div>
+                <img id="feedback" src="image/client.jpg">
+                <div>
+                <div class="container1">
+                    <div class="indicator">
+                        <span class="btn active"></span>
+                        <span class="btn"></span>
+                        <span class="btn"></span>
+                        <span class="btn"></span>
+                    </div>
+                    <div class="testimonial">
+                        <div class="slide-row" id="slide">
+                            <div class="slide-col">
+                                <div class="user-text">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos sint suscipit quibusdam vero consectetur voluptas. Pariatur quibusdam explicabo inventore dicta, iusto repellendus ipsam debitis et fuga nemo voluptate vitae harum?
+                                    </p>
+                                    <h3>LALIT</h3>
+                                    <p>HCL</p>
+                                </div>
+                                <div class="user-img">
+                                    <img src="image/c1.jpg"> 
+                                </div>
+                            </div>
+                            <div class="slide-col">
+                                <div class="user-text">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos sint suscipit quibusdam vero consectetur voluptas. Pariatur quibusdam explicabo inventore dicta, iusto repellendus ipsam debitis et fuga nemo voluptate vitae harum?
+                                    </p>
+                                    <h3>sara</h3>
+                                    <p>hcl</p>
+                                </div>
+                                <div class="user-img">
+                                    <img src="image/c2.jpg"> 
+                                </div>
+                            </div>
+                            <div class="slide-col">
+                                <div class="user-text">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos sint suscipit quibusdam vero consectetur voluptas. Pariatur quibusdam explicabo inventore dicta, iusto repellendus ipsam debitis et fuga nemo voluptate vitae harum?
+                                    </p>
+                                    <h3>sara</h3>
+                                    <p>hcl</p>
+                                </div>
+                                <div class="user-img">
+                                    <img src="image/c3.jpg"> 
+                                </div>
+                            </div>
+                            <div class="slide-col">
+                                <div class="user-text">
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos sint suscipit quibusdam vero consectetur voluptas. Pariatur quibusdam explicabo inventore dicta, iusto repellendus ipsam debitis et fuga nemo voluptate vitae harum?
+                                    </p>
+                                    <h3>sara</h3>
+                                    <p>hcl</p>
+                                </div>
+                                <div class="user-img">
+                                    <img src="image/c4.jpg"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>        
+            </div>
+        </section>
+
+        <section class="get-update" id="subscribe">
+            <div class="update">
+                <h1>GET UPDATE FROM ANYWHARE</h1>
+                <h5>You can subscribe our website to recieve updates on our latest project and services</h5>
+                <input placeholder="Email" type="email" id="email1"></input>
+                <button type="submit" onclick=sendmail() id="Submit">Subscribe</button>
+            </div>
+
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="social">
+                    <h3 style="padding-top:10%;">FOLLOW ME</h3>
+                    <a href="https://twitter.com/Alok11210160" target="_blank"><i class="fa-brands fa-twitter" id="twitter" style="font-size: 3.4rem;"></i></a>
+
+                    <a href="https://www.facebook.com/profile.php?id=100007666005053" target="_blank"><i class="fa-brands fa-facebook" id="facebook" style="font-size: 3.4rem;"></i></a>
+
+                    <a href="https://www.instagram.com/alokshakya007/?hl=en" target="_blank"><i class="fa-brands fa-instagram" id="insta" style="font-size: 3.4rem;"></i></a>
+
+                    <a href="https://www.linkedin.com/in/alok-shakya-36a928211/" target="_blank"><i class="fa-brands fa-linkedin-in" id="linkdin" style="font-size: 3.4rem;"></i></a>
+                    
+                    <p> Copyright &copy; 2022 All rights reserved | This website is made by Alok Kushawaha</p>
+                </div>
+            </div>
+
+
+        </footer>
+
+    </main>
+</body>
+<script>
+    var btn = document.getElementsByClassName("btn");
+    var slide= document.getElementById("slide");
+
+    btn[0].onclick = function(){
+        slide.style.transform = "translateX(0rem)";
+        for(i=0;i<4;i++){
+           btn[i].classList.remove("active") ;
+        }
+        this.classList.add("active");
+    }
+    btn[1].onclick = function(){
+        slide.style.transform = "translateX(-80.0rem)";
+        for(i=0;i<4;i++){
+           btn[i].classList.remove("active") ;
+        }
+        this.classList.add("active");
+    }
+    btn[2].onclick = function(){
+        slide.style.transform = "translateX(-160.0rem)";
+        for(i=0;i<4;i++){
+           btn[i].classList.remove("active") ;
+        }
+        this.classList.add("active");
+    }
+    btn[3].onclick = function(){
+        slide.style.transform = "translateX(-240.0rem)";
+        for(i=0;i<4;i++){
+           btn[i].classList.remove("active") ;
+        }
+        this.classList.add("active");
+    }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendmail(){
+        const a =$("#email1").val();
+        Email.send({
+            
+            Host : "smtp.gmail.com",
+            Username : "alokshakya339@gmail.com",
+            Password : "acmnfcqviazebatm",
+            To : a,
+            From : "alokshakya339@gmail.com",
+            Subject : "New user form wep page",
+            Body : "Thank you for subscribing our web page "
+        }).then(
+        message => {
+            if(message=='OK'){
+                alert("Thank you for subscribing to us")
+            }
+            else{
+                alert("Error")
+            }
+        }
+        
+        );
+        
+    }
+</script>
+<script>
+    function Usermail(){
+        const name =$("#name").val();
+        const organization =$("#Organization").val();
+        const country =$("#country").val();
+        const email =$("#email").val();
+        Email.send({
+            
+            Host : "smtp.gmail.com",
+            Username : "developershakya1@gmail.com",
+            Password : "ccssoeeefbqvbbni",
+            To : email,
+            From : "developershakya1@gmail.com",
+            Subject : "Hiring alert form "+name+" ("+ organization +")",
+            Body : "Dear "+name+" Sir, Thank you for chosing me as a part of your "+organization+" organization "
+        }).then(
+        message => {
+            if(message=='OK'){
+                alert("Thank you for this opportunity")
+            }
+            else{
+                alert("Error")
+            }
+        }
+        
+        );
+        
+    }
+</script>
+<script>
+    function mymail(){
+        const name=$("#name").val();
+        const organization=$("#Organization").val();
+        const country=$("#country").val();
+        const email =$("#email").val();
+        const subject=$("#subject")
+        var Body='Name: '+name+'<br>Email: '+email+'<br>country: '+country+'<br>Message: '+subject;
+        Email.send({
+            
+            Host : "smtp.gmail.com",
+            Username : "developershakya1@gmail.com",
+            Password : "ccssoeeefbqvbbni",
+            To : "alokshakya339@gmail.com",
+            From : "developershakya1@gmail.com",
+            Subject : "Recruter's Mail",
+            Body : body
+        }).then(
+        message => {
+            if(message=='OK'){
+                alert("Alok kushawaha will response your Email as soon as possible")
+            }
+            else{
+                alert("Error")
+            }
+        }
+        
+        );
+        
+    }
+</script>
+
+<script>
+    var openPopUpBtn = document.querySelector("#open-popup-btn");
+    var closePopUpBtn = document.querySelector(".popup-close-btn");
+
+    openPopUpBtn.addEventListener("click",function(){
+        document.body.classList.add("popup-active");
+    });
+    
+    closePopUpBtn.addEventListener("click",function(){
+        document.body.classList.remove("popup-active");
+    });
+
+</script>
+
+</html>
