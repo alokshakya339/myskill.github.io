@@ -303,8 +303,10 @@
             <div class="update">
                 <h1>GET UPDATE FROM ANYWHARE</h1>
                 <h5>You can subscribe our website to recieve updates on our latest project and services</h5>
-                <input placeholder="Email" type="email" id="email1"></input>
-                <button type="submit" onclick=sendmail() id="Submit">Subscribe</button>
+                <form name="email data">
+                    <input placeholder="Email" type="email" id="email1" name="subscriberemail"></input>
+                    <button type="submit" onclick=sendmail() id="Submit" value="Submit">Subscribe</button>
+                </form>
             </div>
 
         </section>
@@ -403,7 +405,7 @@
             Password : "ccssoeeefbqvbbni",
             To : email,
             From : "developershakya1@gmail.com",
-            Subject : "Hiring alert form "+name+" ("+ organization +")",
+            Subject : "Reply from Alok kushawaha",
             Body : "Dear "+name+" Sir, Thank you for chosing me as a part of your "+organization+" organization "
         }).then(
         message => {
@@ -465,14 +467,26 @@
 
 </script>
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwH2Riftls-A1-wADnLncFHaKpQelTZk4qkCBJST0q5NhIoRPlqqYHrik8wSK8gscX9/exec'
-    const form = document.forms['contact form']
+    var scriptURL = 'https://script.google.com/macros/s/AKfycbwH2Riftls-A1-wADnLncFHaKpQelTZk4qkCBJST0q5NhIoRPlqqYHrik8wSK8gscX9/exec'
+    var form = document.forms['contact form']
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message))
         document.body.classList.remove("popup-active");
+    })
+    
+  </script>
+  <script>
+    var scriptURL = 'https://script.google.com/macros/s/AKfycbw1cJ9ZSKktpQnFynBviyadPxOuo077PZ39ZiRH_cJbocIGQG4IacO00mxrk_w3yvQ/exec'
+    var form = document.forms['email data']
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+        alert("future project alert is on")
     })
     
   </script>
