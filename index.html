@@ -20,7 +20,7 @@
             <div class="popup">
                 <h1>HIRE ME</h1>
                 <div class="container">
-                    <form action="javascript:Usermail()" method="post" name="contact form" id="contact form">
+                    <form action="javascript:Usermail()" method="post" name="contact-form" id="contact-form">
                       <div class="row">
                         <div class="col-25">
                           <label for="fname">Full Name</label>
@@ -467,14 +467,15 @@
 
 </script>
 <script>
-    var scriptURL = 'https://script.google.com/macros/s/AKfycbwr_wfl7ZgUOrhegLs5yH2C7m88gm7IfAcBKnYoJuvnJHLVChCNhF-66-QHgHVkLSsV/exec'
-    var form = document.forms['contact form']
+    var scriptURL = 'https://script.google.com/macros/s/AKfycbz489yOkJiFIm1ylicM-EKS6Bdze-7Vc7v1X49od6cWQitGgwF0q1CQuv2TMuX_BRJr/exec'
+    var form = document.forms['contact-form']
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message))
         document.body.classList.remove("popup-active");
+        alert("i am running");
     })
     
   </script>
